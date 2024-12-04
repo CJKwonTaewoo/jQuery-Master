@@ -16,28 +16,28 @@
 </div>
 
 <script>
-// 함수 선언 : resultBoolean
-function resultBoolean( target ) {
-	var $result = $("#result");
-	
-	$result
-		.show()
-		.find(".boolean")
-		.show();
-		
-	if( target ) {
-		$result
-			.find(".boolean .false")
-			.hide();
-	} else {
-		$result
-			.find(".boolean .true")
-			.hide();
-	}
-}
+	// 함수 선언 : resultBoolean
+	function resultBoolean( target ) {
+		var $result = $("#result");
 
-// 함수 실행 : resultBoolean
-resultBoolean( $("body").is("#boolean") );
+		$result
+			.show()
+			.find(".boolean")
+			.show();
+
+		if( target ) {
+			$result
+				.find(".boolean .false")
+				.hide();
+		} else {
+			$result
+				.find(".boolean .true")
+				.hide();
+		}
+	}
+
+	// 함수 실행 : resultBoolean
+	resultBoolean( $("body").is("#boolean") );
 </script>
 </body>
 </html>

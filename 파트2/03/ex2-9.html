@@ -8,20 +8,20 @@
 <body>
 
 <!-- 실습 영역 -->
-	<!-- 1 ~ 11번의 결과 확인이 필요한 부분만 해당 주석을 풀어주세요.
-	<div>
-		<strong>STRONG 태그 : 1</strong>
-		<em>EM 태그 : 1</em>
-		<div>DIV 태그 : 1</div>
-		<p>P 태그 : 1</p>
-		<div>DIV 태그 : 2</div>
-		<div style="height:18px"></div>
-		<p>P 태그 : 2 <strong>STRONG 태그 : 1</strong></p>
-		<div>DIV 태그 : 3</div>
-		<p>P 태그 : 3</p>
-	</div> -->
+	-- 1 ~ 11번의 결과 확인이 필요한 부분만 해당 주석을 풀어주세요.
+<!--	<div>-->
+<!--		<strong>STRONG 태그 : 1</strong>-->
+<!--		<em>EM 태그 : 1</em>-->
+<!--		<div>DIV 태그 : 1</div>-->
+<!--		<p>P 태그 : 1</p>-->
+<!--		<div>DIV 태그 : 2</div>-->
+<!--		<div style="height:18px"></div>-->
+<!--		<p>P 태그 : 2 <strong>STRONG 태그 : 1</strong></p>-->
+<!--		<div>DIV 태그 : 3</div>-->
+<!--		<p>P 태그 : 3</p>-->
+<!--	</div>-->
 	
-	<!-- 12 ~ 17번의 결과 확인이 필요한 부분만 해당 주석을 풀어주세요.
+	<!-- 12 ~ 17번의 결과 확인이 필요한 부분만 해당 주석을 풀어주세요. -->
 	<div>
 		<a href="#target" id="click">A 태그 : 1, href="#target" id="click"</a>
 		<p id="target" tabIndex="1">P 태그 : 1, id="target"</p>
@@ -35,7 +35,7 @@
 			<option>SELECT 태그 : 1</option>
 			<option selected>SELECT 태그 : 2</option>
 		</select>
-	</div> -->
+	</div>
 <script>
 
 // 결과 확인이 필요한 부분만 해당 주석을 풀어주세요.
@@ -48,13 +48,13 @@ function resultSelector( selector, lineColor ) {
 	// 문서 트리의 전체적 접근
 	
 	// 1. :nth-child()
-	//resultSelector( $("div :nth-child(1)") );
+	// resultSelector( $("div :nth-child(1)") );
 	
 	// 2. :first-child
-	//resultSelector( $("div :first-child") );
+	// resultSelector( $("div :first-child") );
 	
 	// 3. :nth-last-child()
-	//resultSelector( $("div :nth-last-child(1)") );
+	// resultSelector( $("div :nth-last-child(1)") );
 	
 	// 4. :last-child
 	//resultSelector( $("div :last-child") );
@@ -81,32 +81,32 @@ function resultSelector( selector, lineColor ) {
 	//resultSelector( $("div :only-of-type") );
 	
 	// 11. :empty
-	//resultSelector( $("div :empty") );
+	// resultSelector( $("div :empty") );
 	
 	
 	
 	// The negative pseudo class
 	// 12. :not()
-	//resultSelector( $("div :not(input)") );
-	
+	// resultSelector( $("div :not(input)") );
+
 	// The UI element states pseudo classes
 	// 13. :enabled
-	//resultSelector( $("div :enabled") );
+	// resultSelector( $("div :enabled") );
 	
 	// 14. :disabled
-	//resultSelector( $("div :disabled") );
+	// resultSelector( $("div :disabled") );
 	
 	// 15. :checked
-	//resultSelector( $("div :checked") );
-	//if( $("option:checked") ) {
-	//	resultSelector( $("select") );
-	//}
+	// resultSelector( $("div :checked") );
+	// if( $("option:checked") ) {
+	// 	resultSelector( $("select") );
+	// }
 	
 	// Dynamic pseudo class
 	// 16. :focus
-	//$("div *").click(function() {
-	//	resultSelector( $("div :focus") );
-	//});
+	$("div *").click(function() {
+		resultSelector( $("div :focus") );
+	});
 	
 	// The target pseudo class
 	// 17. :target

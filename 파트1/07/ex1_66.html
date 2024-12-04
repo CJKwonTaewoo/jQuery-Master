@@ -1,19 +1,24 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<title>이벤트</title>
-	<style>
-		div{border:1px solid red;}
-	</style>
-	<script>		
-		function view(){
-			alert("클릭했습니다2.")
-		}
-	</script>
+ <meta charset="UTF-8">
+ <title>이벤트</title>
+ <style>
+  div{border:1px solid red;}
+ </style>
+ <script>
+  function view(event){
+   alert("클릭했습니다 " + event.target.id);
+  }
+
+  window.onload = function() {
+    document.getElementById("div1").addEventListener("click", view);
+    document.getElementById("div2").addEventListener("click", view);
+  }
+ </script>
 </head>
 <body>
-	<div onclick="javascript:alert('클릭했습니다1.')">클릭</div>
-	<div onclick="javascript:view()">클릭</div>
+ <div id="div1">클릭</div>
+ <div id="div2">클릭</div>
 </body>
 </html>

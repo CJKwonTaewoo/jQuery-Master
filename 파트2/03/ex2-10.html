@@ -8,18 +8,18 @@
 <body>
 
 <!-- 실습 영역  : 결과 확인이 필요한 부분만 해당 주석을 풀어주세요.-->
-<!-- 1. [attr] : 속성 표현식
-<div id="">DIV 태그, id=""</div>
-<div class="">DIV 태그, class=""</div>	-->
+<!-- 1. [attr] : 속성 표현식-->
+<!--<div id="">DIV 태그, id=""</div>-->
+<!--<div class="">DIV 태그, class=""</div>-->
 
-<!-- 2. [attr=value] : 속성값 표현식
+<!-- 2. [attr=value] : 속성값 표현식 -->
 <div class="">DIV 태그, class=""</div>
 <div class="class_one">DIV 태그, class="class_one"</div>
-<div class="class_one class_two">DIV 태그, class="class_one class_two"</div> -->
+<div class="class_one class_two">DIV 태그, class="class_one class_two"</div>
 
-<!-- 3. [attr1=value1][attr2=value2] : 다중 속성 값 표현식
+<!-- 3. [attr1=value1][attr2=value2] : 다중 속성 값 표현식 -->
 <div class="class_one">DIV 태그, class="class_one"</div>	
-<div id="id_one" class="class_one">DIV 태그, id="id_one" class="class_one"</div> -->
+<div id="id_one" class="class_one">DIV 태그, id="id_one" class="class_one"</div>
 
 <!-- 4. [attr~=value] : 단어 일치 표현식
 <div class="class_one">DIV 태그, class="class_one"</div>	
@@ -62,15 +62,15 @@ function resultSelector( selector, lineColor ) {
 	// CSS based Selectors
 
 	// 1. [attr] : 속성 표현식
-	//resultSelector( $("[id]") );
-	//resultSelector( $("[class]"), "blue" );
+	// resultSelector( $("[id]") );
+	// resultSelector( $("[class]"), "blue" );
 	
 	// 2. [attr=value] : 속성 값 표현식
-	//resultSelector( $("[class='']") );
-	//resultSelector( $("[class=one]"), "blue" );
+	// resultSelector( $("[class='']") );
+	// resultSelector( $("[class=one]"), "blue" );
 	
 	// 3. [attr1=value1][attr2=value2] : 다중 속성 값 표현식
-	//resultSelector( $("[id=id_one][class=class_one]") );
+	resultSelector( $("[id=id_one][class=class_one]") );
 	
 	// 4. [attr~=value] : 단어 일치 표현식
 	//resultSelector( $("[class~=class_one]") );
